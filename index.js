@@ -192,11 +192,11 @@ async function startBot() {
   const sessionFile = path.join(sessionFolder, 'creds.json');
 
   // Check if sessionID is provided and process CYBER_QUEST! format session
-  if (config.sessionID && config.sessionID.startsWith('CYBER_QUEST!')) {
+  if (config.sessionID && config.sessionID.startsWith('KnightBot!')) {
     try {
       const [header, b64data] = config.sessionID.split('!');
 
-      if (header !== 'CYBER_QUEST' || !b64data) {
+      if (header !== 'KnightBot' || !b64data) {
         throw new Error("❌ Invalid session format. Expected 'CYBER_QUEST!.....'");
       }
 
