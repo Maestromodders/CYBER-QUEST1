@@ -1,0 +1,22 @@
+{
+  "name": "cyber-quest-bot",
+  "description": "CYBER_QUEST - A powerful WhatsApp Bot",
+  "repository": "https://github.com/mruniquehacker/KnightBot-Mini",
+  "keywords": ["whatsapp", "bot", "cyber"],
+  "env": {
+    "SESSION_ID": {
+      "description": "Your WhatsApp session ID",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
